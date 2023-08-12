@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --main-bg: rgb(190, 178, 163);
+    --display-font: 'Seaweed Script', cursive;
+    --text-font: 'Mali', cursive;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+    background-color: var(--main-bg);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.425);
+}
+
+header > h1 {
+    font-family: var(--display-font);
+    font-size: 10vw;
+    font-variant: small-caps;
+    padding-top: 50px;
+}
+
+header > p {
+    font-family: var(--text-font);
+    font-size: 1em;
+    padding-bottom: 50px;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.61);
+    margin: 0px 40px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.404);
+}
+
+section {
+    padding: 4vh 0;
+}
+
+section > p {
+    font: 500 2vw var(--text-font);
+    line-height: 4em;
+    padding: 30px 0 30px 0;
+    margin: 0;
+}
+
+.normal {
+    width: 50%;
+    margin: auto;
+}
+
+.img {
+    color: white;
+    box-shadow: inset 6px 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+.img > p {
+    max-width: 420px;
+    text-shadow: 2px 2px 2px black;
+    margin: 30px;
+}
+
+#first > p {
+    margin-left: auto;
+    margin-right: 0;
+    background-color: rgba(0, 0, 0, 0.123);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#first {
+    background: url(img/pen.jpg) no-repeat fixed center center / 100% 100%;
+}
+
+#second {
+    background: url(img/candle.jpg) no-repeat fixed center center / 100% 100%;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 5px;
+    margin-top: 50px;
+}
+
+footer > p {
+    color: white;
+    font-size: 0.9em;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.39);
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+    padding: 2px;
+    margin: 2px;
+    border-radius: 2px;
+}
+
+footer a:hover {
+    color: black;
+    background-color: white;
+}
